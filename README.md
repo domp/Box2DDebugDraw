@@ -1,18 +1,22 @@
 # Box2DDebugDraw
 
-**Tested with cocos2d-x v3.14.1 and v3.15rc0**
+**Compatible with cocos2d-x v3.14.1 and v3.15**
 
 Simply add the files to your project and include the header:
 
 ```
-#include "Box2DDebugDrawNode.h"
+#include "B2DebugDrawNode.h"
 ```
 
 After that, add the node:
 
 ```
 const float pixelToMeterRatio = 32.0f;
-Box2DDebugDrawNode *debugDraw = Box2DDebugDrawNode::create(world, pixelToMeterRatio, true, true, true, true);
+B2DebugDrawNode *debugDraw = B2DebugDrawNode::create(world, pixelToMeterRatio, 
+                                                     true, // Draw shape
+                                                     true, // Draw joint
+                                                     true, // Draw aabb
+                                                     true); // Draw center of mass
 this->addChild(debugDraw);
 ```
 
