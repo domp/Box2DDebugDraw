@@ -1,6 +1,6 @@
 # Box2DDebugDraw
 
-**Compatible with cocos2d-x v3.14.1 and v3.15**
+**Tested with cocos2d-x v3.14.1, v3.15 & v3.16**
 
 Simply add the files to your project and include the header:
 
